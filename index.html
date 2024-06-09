@@ -13,6 +13,7 @@
   </head>
   <body>
     <header>
+      <div></div>
       <a href="#" class="logo"> Nermine </a>
       <nav class="navigation">
         <a href="#Services">Work</a>
@@ -20,30 +21,32 @@
         <a href="#career">Eduction</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div></div>
     </header>
 
     <section class="main">
-        <div class="main-intro"> <!-- New wrapper div -->
-          <img src="images/Nermine.jpg" alt="Nermine" class="profile-pic"> <!-- Removed inline styles for class -->
-          <div> <!-- Text wrapper for better control -->
+        <div class="main-intro">
+          <img src="./Images/Nermine.jpg" alt="Nermine" class="profile-pic">
+          <div>
             <h2>Hello, This is Nermine<br /><span>ICT Engineering Student</span></h2>
             <h3>full stack enthusiast</h3>
-            <a href="file:///C:/Users/NERMINE88/Downloads/cv.pdf" class="main-btn">Check my CV</a>
+            <a href="./Images/cv.pdf" download class="main-btn">Check my CV</a>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/nermine-ezzine-07505229b/"
-            ><i class="fa-brands fa-linkedin" style="color: #0c3a64"></i
+            ><i class="fa-brands fa-linkedin"></i
           ></a>
           <a href="https://www.facebook.com/nermine.ezzine.2"
-            ><i class="fa-brands fa-facebook" style="color: #0c3a64"></i
+            ><i class="fa-brands fa-facebook" ></i
           ></a>
           <a href="https://www.instagram.com/ezzinenermine/"
-            ><i class="fa-brands fa-instagram" style="color: #0c3a64"></i
+            ><i class="fa-brands fa-instagram" ></i
           ></a>
           <a href="https://github.com/ner001"
-            ><i class="fa-brands fa-github" style="color: #0c3a64"></i
+            ><i class="fa-brands fa-github" ></i
           ></a>
         </div>
       </div>
+    </div>
     </section>
 
     <section class="cards" id="Services">
@@ -101,7 +104,7 @@
       <div class="content">
         <div class="project-card">
           <div class="project-image">
-            <img src="images/myapp.png" />
+            <img src="./Images/myapp.png" />
           </div>
           <div class="project-info">
             <p class="project-category">applicaion to improve public security </p>
@@ -115,7 +118,7 @@
         
         <div class="project-card">
           <div class="project-image">
-            <img src="images/pacte.png" />
+            <img src="./Images/pacte.png" />
           </div>
           <div class="project-info">
             <p class="project-category">Control bike and enhance their security</p>
@@ -129,34 +132,34 @@
             
     </section>
     <section class="career" id="career">
-      <h2 class="career">Career</h2>
+      <h2>Career</h2>
       <div class="content">
         <div class="project-card">
           <div class="project-image">
-            <img src="images/sup-com-logo.png" />
+            <img src="./Images/sup-com-logo.png" />
           </div>
           <div class="project-info">
             <p class="project-category">
-            my university</p>
+            My University</p>
             <strong class="project-title">
               <span></span>
               <a href="https://www.supcom.tn/" class="more-details"
-                >more-details about Sup'Com</a
+                >More-details about Sup'Com</a
               >
             </strong>
           </div>
         </div>
         <div class="project-card">
           <div class="project-image">
-            <img src="images/ipeim.jpg" />
+            <img src="./Images/ipeim.jpg" />
           </div>
           <div class="project-info">
             <p class="project-category">
-              preparatory school </p>
+              Preparatory Pchool </p>
             <strong class="project-title">
               <span></span>
               <a href="https://ipeim.rnu.tn/" class="more-details"
-                >more-details about ipeim</a
+                >More-details about ipeim</a
               >
             </strong>
           </div>
@@ -208,6 +211,10 @@
               <label for="emailInput">Email:</label>
               <input type="email" id="emailInput" name="email" required>
             </div>
+            <div class="form-group" id="email">
+              <label for="emailInput">Subject:</label>
+              <input type="text" id="subjectvalue" required>
+            </div>
             <div class="form-group">
               <label for="message">Message:</label>
               <textarea id="message" name="message" required></textarea>
@@ -218,33 +225,42 @@
       </section>
       
     <footer class="footer">
+      <div></div>
       <p class="footer-title">copyrights @ <span>Nermine Ezzine</span></p>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/nermine-ezzine-07505229b/"
-          ><i class="fa-brands fa-linkedin" style="color: #0c3a64"></i
+          ><i class="fa-brands fa-linkedin"></i
         ></a>
         <a href="https://www.facebook.com/nermine.ezzine.2"
-          ><i class="fa-brands fa-facebook" style="color: #0c3a64"></i
+          ><i class="fa-brands fa-facebook"></i
         ></a>
         <a href="https://www.instagram.com/ezzinenermine/"
-          ><i class="fa-brands fa-instagram" style="color: #0c3a64"></i
+          ><i class="fa-brands fa-instagram" ></i
         ></a>
         <a href="https://github.com/ner001"
-          ><i class="fa-brands fa-github" style="color: #0c3a64"></i
+          ><i class="fa-brands fa-github" ></i
         ></a>
       </div>
+      <div></div>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script> 
       function sendEmail() {
-    var userEmail = document.getElementById("emailInput").value; // Adjusted for the unique ID
+    var userEmail = document.getElementById("emailInput").value;
+    var userName = document.getElementById("name").value;
+    var userSubject = document.getElementById("subjectvalue").value;
+    var theMessage = document.getElementById("message").value;
 
-    Email.send({ 
-      SecureToken: "4202be4e-d1d6-48c4-8904-443a8b4a478d", // Use the Secure Token you get from ElasticEmail
-      To: 'nermineezzine0@gmail.com',
-      From: userEmail, // This might need to be your verified ElasticEmail address
-      Subject: "New Message from " + userEmail,
-      Body: "And this is the body"
+    Email.send({
+      SecureToken: "c99ebf76-7044-4a97-a3a3-986ee50089d5",
+      /*
+      Host: "smtp.elasticemail.com",
+      Username: "chater.mrezgui2002@gmail.com",
+      Password: "ADB1163ADCBD3AFE03731B57BF9797C7282C",*/
+      To: 'chater.mrezgui2002@gmail.com',
+      From: 'chater.forarduinouse@gmail.com',
+      Subject: userSubject + " [from " + userName+"]",
+      Body: "User Email: " + userEmail+ "<br><br>" + theMessage
     }).then(
       message => alert(message)
     );

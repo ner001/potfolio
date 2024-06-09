@@ -7,19 +7,28 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
 .main-intro {
-    display: flex; /* Keeps Flexbox */
-    align-items: center; /* Keeps items vertically centered */
-    justify-content: space-between; /* Maximizes space between text and image */
-    flex-direction: row-reverse; /* Puts the image to the right */
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-direction: row-reverse;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .main-intro {
+      flex-direction: column;
+    }
   }
   
   .profile-pic {
-    width: 350px; /* Increased width */
-    height: 350px; /* Increased height to maintain aspect ratio for a circle */
-    border-radius: 50%; /* Keeps the image round */
-    object-fit: cover; /* Ensures the image covers the area */
-    /* You can use margin-left if you need specific spacing instead of space-between */
+    width: 350px; 
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
   }
   
   
@@ -59,7 +68,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/ihe.png) no-repeat;
+    /*background: url(./Images/ihe.jpg) no-repeat;*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -104,20 +113,33 @@ section{
 }
 .social-icons a {
     font-size: 1.7em;
+    color: #0c3a64;
+    transition: all 0.4s ease;
     padding-right: 30px;
 }
+
+.social-icons a:hover {
+  fill: #000;
+  color: aliceblue  !important;
+  font-size: 2.2em;
+}
+
 .title{
     display: flex;
     justify-content: center;
     color: #601cfc;
     font-size: 2.2em;
     font-weight: 800;
+    position: relative;
+    z-index: 12;
     margin-bottom: 30px;
 }
 .content{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    position: relative;
+    z-index: 12;
     flex-wrap: wrap;
 }
 .card{
@@ -150,16 +172,19 @@ section{
 }
 .career{
     background-color:#000016 ;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .career.content{
     margin-top: 30px;
 }
 .career h2{
     color: #3a6cf4;
+    text-align: center;
     font-size: 40px;
-    justify-content: center;
-    padding-left: 12em;
-    padding-bottom: 1em;
+    padding-bottom: 25px;
 }
 .projects{
     background-color: #000016;
@@ -193,7 +218,7 @@ section{
 }
 .project-category{
     font-size: 0.8em;
-    color: #000;
+    color: aliceblue;
 }
 .project-title{
     display: flex;
@@ -414,31 +439,44 @@ body, input, textarea, button {
 header {
         background-color: #220031; /* Slightly darker purple for the header */
       }
-      .navigation a {
-        color: #ffffff;
-      }
-      
-      .navigation a:hover {
-        color: #dcb0ff; /* Light purple for hover state */
-      }
-      
-      /* Titles and headings */
-      h1, h2, h3, h4, h5, h6 {
-        color: #ffffff; /* Ensure headings are also light for contrast */
-      }
-      
-      /* Cards and buttons */
-      .card, .project-card, .contact-form button {
-        background-color: #3a2c54; /* A lighter shade of purple for the cards and buttons */
-        color: #ffffff; /* White text for contrast */
-      }
-      
-      .card:hover, .project-card:hover {
-        background-color: #4e3a6d; /* Slightly lighter purple on hover for interactivity */
-      }
-      
-      /* Footer */
-      .footer {
-        background-color: #220031; /* Consistent with the header */
-      }
-      
+.navigation a {
+  color: #ffffff;
+}
+
+.navigation a:hover {
+  color: #dcb0ff; /* Light purple for hover state */
+}
+
+/* Titles and headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* Ensure headings are also light for contrast */
+}
+
+/* Cards and buttons */
+.card, .project-card, .contact-form button {
+  background-color: #3a2c54;
+  color: #ffffff;
+}
+
+.card:hover, .project-card:hover {
+  background-color: #4e3a6d;
+}
+.footer {
+  background-color: #220031;
+  height: 100px;
+}
+
+#projects::before{
+  content: "";
+	display:flex;
+	position: absolute;
+  left: 0;
+  margin-top: -100px;
+	width: 100%;
+  height: 100%;
+	background: linear-gradient(to bottom, rgba(44, 0, 62, 1) 0%, rgba(0, 0, 0, 0) 40%);
+	z-index: 1;
+}
+.contact-content input, textarea{
+  color: aliceblue !important;
+}
