@@ -45,7 +45,7 @@ I'm a first-year ICT engineering student with a burning passion for technology a
 ### - BikeGuardian
 **Description**: Developed a mobile application for Sup'bike club to track bikes to enhance security using Flutter and Firebase
 
-### - GuardienLock
+### - GuardianLock
 **Description**: Developed a mobile application for car secuirty using face recogniation using flutter and firebase
 
 ### - Portfolio
@@ -64,7 +64,7 @@ I'm a first-year ICT engineering student with a burning passion for technology a
 
 Feel free to reach out if you have any questions, comments, or opportunities!
 
-- **Email**: nermineezzine09@gmail.com
+- **Email**: nermineezzine0@gmail.com
 - **LinkedIn**: [@Nermine-Ezzine][linkedin-url]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
