@@ -49,16 +49,16 @@ header{
     font-weight: 700;
     font-size: 1.8em;
 }
-.navigation a{
-    color:#3a6cf4 ;
+.navigation a{    
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
     padding-left: 30px;
 
 }
-.navigation a:hover{
-    color: #601cfc;
+.navigation a:hover {
+  color: #dcb0ff;
 }
 section{
     padding: 100px 200px;
@@ -68,7 +68,6 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    /*background: url(./Images/ihe.jpg) no-repeat;*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -240,8 +239,10 @@ section{
 .contact .info h3{
     color: #000;
 }
+
 .footer{
-    background-color: #000016;
+    background-color: #220031;
+    height: 100px;
     color: #fff;
     padding: 2em;
     display: flex;
@@ -255,7 +256,7 @@ section{
 .footer-title span{
     color: #3a6cf4;
 }
-@media (max-widht:1023px){
+@media (max-width:1023px){
     header{
         padding: 12px 20px;
     }
@@ -294,7 +295,7 @@ section{
         font-size: 0.8em;
     }
 }
-@media(max-widht:300px){
+@media(max-width:300px){
     body{
         font-size: 10px;
     }
@@ -315,12 +316,12 @@ section{
     font-weight: 700;
   }
   
-  /* Contact form styling */
   .contact-form {
-    max-width: 600px; /* Set a max-width for the form */
+    max-width: 600px;
     margin: auto;
     padding: 20px;
     background: #ffffff;
+    margin-top: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
@@ -380,10 +381,6 @@ section{
     text-align: center;
   }
   
-  .contact-form {
-    margin-top: 20px;
-  }
-  
   .form-group {
     margin-bottom: 15px;
   }
@@ -435,16 +432,7 @@ section{
   }
 body, input, textarea, button {
     background-color: #2c003e; /* Dark purple background */
-    color: #474747; /* White text for contrast */ }
-header {
-        background-color: #220031; /* Slightly darker purple for the header */
-      }
-.navigation a {
-  color: #ffffff;
-}
-
-.navigation a:hover {
-  color: #dcb0ff; /* Light purple for hover state */
+    color: #474747; /* White text for contrast */ 
 }
 
 /* Titles and headings */
@@ -461,10 +449,6 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover, .project-card:hover {
   background-color: #4e3a6d;
 }
-.footer {
-  background-color: #220031;
-  height: 100px;
-}
 
 #projects::before{
   content: "";
@@ -479,4 +463,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contact-content input, textarea{
   color: aliceblue !important;
+}
+
+.main-intro button {
+  font-size:30px;
+  color: #fff;
+  background: none;
+  border: none;
+  border-radius: 50%; 
+  position: relative;
+  z-index: 0;
+  transition: .3s;
+  cursor: pointer;
+}
+.main-intro button:before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  padding: 10px;
+  border-radius: 50%; 
+  background: conic-gradient(
+        #ff53bb ,
+        #0000 30deg 120deg,
+        #00f8d3 150deg 180deg,
+        #0000 210deg 300deg,
+        #ff53bb 330deg
+    );
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: intersect
+}
+/*
+.main-intro button:after {
+  content: "";
+  position: absolute;
+  inset: -100px;
+  background:
+    radial-gradient(200px at left  400px top 150px,#ff53bb 100%,#0000),
+    radial-gradient(200px at right 400px bottom 150px,#00f8d3 100%,#0000);
+  filter: blur(120px);
+  opacity: .5;
+}*/
+
+.main-intro button:before,
+.main-intro button:after {
+  animation: roll 8s infinite;
+  transition:.5s, 99999s 99999s transform;
+}
+.main-intro button:hover {
+  box-shadow: 0 0 0 1px #666;
+}
+
+@keyframes roll {
+  100% {
+    transform: rotate(360deg);
+    transition: .5s,600s linear transform;
+  } 
+}
+.main-intro button>img{
+    border-radius: 50%;
+    left: -2px;
+    position: relative;
+    top: 2px;
+    opacity:0.9;
 }
