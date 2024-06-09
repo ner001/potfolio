@@ -42,13 +42,13 @@ I'm a first-year ICT engineering student with a burning passion for technology a
 
 ## Projects
 
-### Project 1: BikeGuardian
+### - BikeGuardian
 **Description**: Developed a mobile application for Sup'bike club to track bikes to enhance security using Flutter and Firebase
 
-### Project 2: GuardienLock
+### - GuardienLock
 **Description**: Developed a mobile application for car secuirty using face recogniation using flutter and firebase
 
-### Project 3: Portfolio
+### - Portfolio
 **Description**: Crafted a dynamic portfolio with HTML/CSS, featuring responsive design and engaging visuals to highlight front-end development skills
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
