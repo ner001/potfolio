@@ -207,7 +207,6 @@ section{
     min-height: 14em;
     width: 23em;
     position:absolute;
-    box-shadow: 0 0 5px 2px rgba(50,50,50,0.25);
 }
 project-card back {
     background-color: #f0f0f0;
@@ -238,6 +237,7 @@ project-card front {
 
 .project-image img{
     width: 100%;
+    min-height: 14em;
 }
 
 .project-info{
