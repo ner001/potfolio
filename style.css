@@ -200,12 +200,39 @@ section{
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
-    transition: 0.7s ease;
+    transition: transform 1500ms;
+    position: relative;
+}
+.project-card front , .project-card back {
+    min-height: 14em;
+    width: 23em;
+    position:absolute;
+    box-shadow: 0 0 5px 2px rgba(50,50,50,0.25);
+}
+project-card back {
+    background-color: #f0f0f0;
+    border: 1px solid #fff ;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+}
+project-card front {
+    background-color: #f0f0f0;
+    border: 1px solid #fff ;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
 }
 .project-card:hover{
-    transform: scale(1.1);
+    cursor: pointer;
+    transform: rotateY(180deg);
 }
-.project-card:hover .project-image {
+
+.project-card front:hover .project-image {
     opacity: 0.9;
 }
 
