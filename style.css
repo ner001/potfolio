@@ -232,7 +232,7 @@ project-card front {
 }
 
 .project-card front:hover .project-image {
-    opacity: 0.9;
+    opacity: 0;
 }
 
 .project-image img{
