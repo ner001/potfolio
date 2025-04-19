@@ -116,15 +116,15 @@ Let's connect and collaborate on exciting projects!
 
 ---
 
-*This portfolio is continuously updated as I grow in my engineering journey. Last updated: June 2024*
+*This portfolio README was created with love and is a continuous work in progress. Stay tuned for more updates!*
 
-[contributors-shield]: https://img.shields.io/github/contributors/ner001/portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/ner001/portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ner001/portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/ner001/portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/ner001/portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/ner001/portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ner001/portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/ner001/portfolio/issues
+[contributors-shield]: https://img.shields.io/github/contributors/ner001/potfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/ner001/potfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ner001/potfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/ner001/potfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/ner001/potfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/ner001/potfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ner001/potfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/ner001/potfolio/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nermine-ezzine-07505229b/
