@@ -207,7 +207,47 @@ section {
     padding: 20px 0;
 }
 
-/* Project Icon Styling */
+/* ================= PROJECTS SECTION ================= */
+.projects {
+    background-color: #000016;
+    padding: 100px 200px;
+}
+
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #3a2c54;
+    border: 1px solid #4e9eff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 23em;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #601cfc;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .project-icon {
     display: flex;
     justify-content: center;
@@ -222,17 +262,116 @@ section {
     transition: all 0.3s ease;
 }
 
-/* For Experience Section */
+.project-card:hover .project-icon {
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 0 8px 25px rgba(58, 108, 244, 0.4);
+}
+
+.project-info {
+    padding: 1.5em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-category {
+    font-size: 0.9em;
+    color: #4e9eff;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-title span {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.project-title p {
+    color: #d1d1d1;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin: 10px 0 15px;
+}
+
+.more-details {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #3a6cf4;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: rgba(58, 108, 244, 0.1);
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.more-details:hover {
+    color: #ffffff;
+    background-color: #3a6cf4;
+    transform: translateX(5px);
+}
+
+.more-details i {
+    transition: transform 0.3s ease;
+}
+
+.more-details:hover i {
+    transform: translateX(3px);
+}
+
+/* Experience Section Specific Styles */
+.experience {
+    background-color: #000016;
+    padding: 80px 200px;
+}
+
+.experience .project-card {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .experience .project-icon {
     width: 70px;
     height: 70px;
     font-size: 2em;
 }
 
-/* Hover Effects */
-.project-card:hover .project-icon {
-    transform: rotate(15deg) scale(1.1);
-    box-shadow: 0 8px 25px rgba(58, 108, 244, 0.4);
+.experience .project-title ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.experience .project-title li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    font-size: 0.95em;
+}
+
+.experience .project-title li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #4e9eff;
+    width: 20px;
+    text-align: center;
 }
 /* More Details Link */
 .more-details {
