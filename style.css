@@ -199,84 +199,56 @@ section {
     line-height: 1.6;
 }
 
-/* Projects Section */
-.projects {
-    background-color: #000016;
-    padding: 100px 200px;
-}
-
-.projects .content {
+/* Project and Experience Icons */
+.project-icon {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
+    align-items: center;
+    background: linear-gradient(135deg, #3a6cf4 0%, #601cfc 100%);
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-size: 2.5em;
+    box-shadow: 0 5px 15px rgba(58, 108, 244, 0.3);
+    transition: all 0.3s ease;
 }
 
-.project-card {
-    background-color: #3a2c54;
-    border: 1px solid #4e9eff;
-    min-height: 14em;
-    width: 23em;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.project-card:hover .project-icon {
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 0 8px 25px rgba(58, 108, 244, 0.4);
 }
 
-.project-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: #601cfc;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+/* Experience List Items */
+.project-title ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
 }
 
-.project-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.05);
-}
-
-.project-info {
-    padding: 1.5em;
-}
-
-.project-category {
-    font-size: 0.9em;
-    color: #4e9eff;
-    font-weight: 600;
+.project-title li {
+    position: relative;
+    padding-left: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.project-title {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-title span {
-    font-size: 1.4em;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #ffffff;
-    text-transform: capitalize;
-}
-
-.project-title p {
     color: #d1d1d1;
     font-size: 0.95em;
-    line-height: 1.6;
-    margin: 10px 0 15px;
 }
 
+.project-title li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #4e9eff;
+    width: 20px;
+    text-align: center;
+}
+
+/* More Details Link */
 .more-details {
     display: inline-flex;
     align-items: center;
+    gap: 8px;
     color: #3a6cf4;
     font-weight: 600;
     text-decoration: none;
@@ -292,54 +264,12 @@ section {
     transform: translateX(5px);
 }
 
-.more-details::after {
-    content: '→';
-    margin-left: 8px;
+.more-details i {
     transition: transform 0.3s ease;
 }
 
-.more-details:hover::after {
+.more-details:hover i {
     transform: translateX(3px);
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .projects {
-        padding: 80px 100px;
-    }
-}
-
-@media (max-width: 768px) {
-    .projects {
-        padding: 60px 40px;
-    }
-    
-    .project-card {
-        width: 100%;
-        max-width: 400px;
-    }
-}
-
-@media (max-width: 480px) {
-    .projects {
-        padding: 60px 20px;
-    }
-    
-    .project-title span {
-        font-size: 1.2em;
-    }
-}
-
-/* Education & Experience Sections */
-.career, .experience {
-    background-color: #000016;
-}
-
-.career h2, .experience h2 {
-    color: #3a6cf4;
-    text-align: center;
-    font-size: 2.5em;
-    padding-bottom: 25px;
 }
 
 /* Contact Section */
