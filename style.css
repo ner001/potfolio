@@ -199,7 +199,15 @@ section {
     line-height: 1.6;
 }
 
-/* Project and Experience Icons */
+/* Icon Container Styling */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Project Icon Styling */
 .project-icon {
     display: flex;
     justify-content: center;
@@ -209,41 +217,23 @@ section {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin: 0 auto 20px;
     font-size: 2.5em;
     box-shadow: 0 5px 15px rgba(58, 108, 244, 0.3);
     transition: all 0.3s ease;
 }
 
+/* For Experience Section */
+.experience .project-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
+}
+
+/* Hover Effects */
 .project-card:hover .project-icon {
     transform: rotate(15deg) scale(1.1);
     box-shadow: 0 8px 25px rgba(58, 108, 244, 0.4);
 }
-
-/* Experience List Items */
-.project-title ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 15px;
-}
-
-.project-title li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    color: #d1d1d1;
-    font-size: 0.95em;
-}
-
-.project-title li i {
-    position: absolute;
-    left: 0;
-    top: 4px;
-    color: #4e9eff;
-    width: 20px;
-    text-align: center;
-}
-
 /* More Details Link */
 .more-details {
     display: inline-flex;
